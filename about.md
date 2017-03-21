@@ -6,7 +6,11 @@ permalink: /about/
 
 ### More Information
 
-I am a young programmer living in Ottawa who is looking to get tech experience. 
+I am a university student programmer living in Ottawa with experience in multiple different fields including:
+-  Software test design/implementation
+-  Game development
+-  User experience testing
+
 My hobbies are: programming (clearly), singing (choirs, barbershop quartets, small ensembles) and hiking.
 
 ### Contact me
@@ -14,3 +18,5 @@ My hobbies are: programming (clearly), singing (choirs, barbershop quartets, sma
 Mobile: 613 710-1899
 
 [elliot@hume.ca](mailto:elliot@hume.ca)
+
+Visit my GitHub and LinkedIn profiles with the buttons found below.
