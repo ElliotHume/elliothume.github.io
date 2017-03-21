@@ -6,7 +6,7 @@ permalink: /about/
 
 ### More Information
 
-I am a university student programmer living in Ottawa with experience in multiple different fields, including:
+I am a university student programmer living in Ottawa with experience in multiple fields, including:
 -  Software test design/implementation
 -  Game development
 -  User experience testing
