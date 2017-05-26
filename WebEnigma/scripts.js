@@ -33,6 +33,7 @@ function action(keyword){
     		active = true;
 			$('#command').css('color', 'rgb(5,200,5)');
 			$('h1').css('color', 'rgb(5,200,5)');
+			$('h1').css('text-shadow', '2px 2px darkgreen');
 			$('#title-bar').css('outline-color', 'rgb(5,200,5)');
 			puzzle.display()
     		return "let the games begin, you may skip puzzles with the keyword 'skip'";

@@ -11,10 +11,22 @@ h1 {
     display: inline-block;
     width: 5vw;
     text-align: center;
-    color: darkred;
+    color: red;
     font-size: 45px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px darkred;
+}
+
+.button {
+    background-color: darkgrey;
+}
+
+.button:hover {
+    background-color: lightgrey;
+    transition-duration: 0.4s;
+    box-shadow: 0 0 2px 2px rgba(90,90,90,0.24), 0 0 10px 10px rgba(90,90,90,1);
 }
 
 #title-bar {
@@ -28,7 +40,6 @@ h1 {
 #puzzle_name  {
     font-size: 25px;
     color: lightgrey;
-    font-style: underline;
 }
 
 #puzzle_text{
