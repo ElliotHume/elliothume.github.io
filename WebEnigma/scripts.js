@@ -33,6 +33,7 @@ function action(keyword){
     		active = true;
 			$('#command').css('color', 'rgb(5,200,5)');
 			$('h1').css('color', 'rgb(5,200,5)');
+			$('#title-bar').css('outline-color', 'rgb(5,200,5)');
 			puzzle.display()
     		return "let the games begin, you may skip puzzles with the keyword 'skip'";
         } else if (keyword == "enigma"){
@@ -86,7 +87,7 @@ class Puzzle {
 	build(){
 		this._data = "\
 				First Question~Who am I?~puzzles/images/equation.jpeg~fibonacci*\
-				Song Memory~The artist of the song with the lyrics:_ _\" oh I'm bad, I'm bad, really really bad\"~null~michael jackson_mikey*\
+				Song Memory~The artist of the song with the lyrics:_ _\"Oh I'm bad, I'm bad, really really bad\"~null~michael jackson_mikey*\
 				Riddle~As a stone inside a tree, I'll help your words outlive thee._But if you push me as I stand, the more I move the less I am._ _What am I?~null~a pencil_pencil*\
 				Aptitude test~ What is the next number in this sequence?_0 1 3 3 8 21 ?~null~165*\
 				Riddle~What is better than god, worse than the devil,_dead people eat it, but if you eat it you die?~null~nothing*\

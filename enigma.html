@@ -7,15 +7,22 @@
 		<script type='text/javascript' src='WebEnigma/scripts.js'></script>
     </head>
     <body>
-        <h1>Enigma</h1>
-        <div class="question-box">
-            <p id="puzzle_name"></p>
-            <img id="puzzle_image" src=""/>
-            <div id="puzzle_text"></div>
+        <div id="title-bar">
+            <h1>Enigma</h1>
+            <form style="float: right; vertical-align: center; margin-top:15px; margin-right:10px;">
+                <input type="button" onClick="history.go(0)" value="RESTART">
+            </form>
         </div>
-        <div class="command-box">
-            <p id="command">> </p>
+        <div id="content">
+            <div class="question-box">
+                <p id="puzzle_name"></p>
+                <img id="puzzle_image" src=""/>
+                <div id="puzzle_text"></div>
+            </div>
+            <div class="command-box">
+                <p id="command">> </p>
+            </div>
+            <div class="previous-commands"></div>
         </div>
-        <div class="previous-commands"></div>
     </body>
 </html>

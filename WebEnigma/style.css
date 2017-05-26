@@ -1,9 +1,5 @@
-html {
-    text-align: center;
-}
-
 body {
-    width: 600px;
+    width: 100vw;
     height: 100%;
     margin: 0px auto;
     /*padding-left: 30vw;*/
@@ -12,24 +8,36 @@ body {
 }
 
 h1 {
+    display: inline-block;
+    width: 5vw;
     text-align: center;
     color: darkred;
     font-size: 45px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0px 0px 0px 0px
+    margin: 0px;
+}
+
+#title-bar {
+    text-align: center;
+    margin: 3px 3px 3px 3px;
+    outline-style: solid;
+    outline-color: darkred;
+    background-color: black;
 }
 
 #puzzle_name  {
     font-size: 25px;
-    color: grey;
+    color: lightgrey;
+    font-style: underline;
 }
 
 #puzzle_text{
     font-size: 16px;
-    color: rgb(200,200,200);
+    color: white;
 }
 
 #puzzle_image {
+    font-style: italic;
     display: block;
     margin: 0 auto;
 }
@@ -59,5 +67,4 @@ h1 {
 #command {
     color: red;
     margin-bottom: 0px;
-}
 }
