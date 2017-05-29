@@ -38,8 +38,10 @@ h1 {
 }
 
 #puzzle_name  {
+    width: 70vw;
     font-size: 25px;
     color: lightgrey;
+    float: left;
 }
 
 #puzzle_text{
@@ -90,4 +92,15 @@ h1 {
     width: 1vw;
     font-size: calc(14px - 0.1vw);
     display: inline-block;
+}
+
+#top-bar {
+    display: inline-block;
+    width: 100vw;
+}
+
+#google-icon {
+    display: none;
+    padding: 1.5vw;
+    float: right;
 }
