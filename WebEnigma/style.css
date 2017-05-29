@@ -31,10 +31,11 @@ h1 {
 
 #title-bar {
     text-align: center;
-    margin: 3px 3px 3px 3px;
-    outline-style: solid;
-    outline-color: darkred;
+    margin: 3px;
+    outline: 1px solid darkred;
     background-color: black;
+    border: 6px solid darkred;
+    border-image: linear-gradient(to bottom, darkred, black) 1 100%;
 }
 
 #puzzle_name  {
@@ -64,6 +65,7 @@ h1 {
     padding: 3px;
     padding-left: 5px;
     outline: none !important;
+    font-size: calc(18px - 0.1vw);
 }
 
 .question-box {
@@ -90,7 +92,7 @@ h1 {
 #command {
     color: red;
     width: 1vw;
-    font-size: calc(14px - 0.1vw);
+    font-size: calc(18px - 0.1vw);
     display: inline-block;
 }
 

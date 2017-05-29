@@ -27,6 +27,7 @@ function action(keyword){
     		active = true;
 			$('#command').css('color', 'rgb(5,200,5)');
 			$('#input-box').css('color', 'rgb(5,200,5)');
+			$('#title-bar').css('border-image', 'linear-gradient(to bottom, rgb(5,200,5), black) 1 100%')
 			$('h1').css('color', 'rgb(5,200,5)');
 			$('h1').css('text-shadow', '2px 2px darkgreen');
 			$('#title-bar').css('outline-color', 'rgb(5,200,5)');
