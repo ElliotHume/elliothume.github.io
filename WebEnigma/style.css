@@ -54,7 +54,7 @@ h1 {
 }
 
 #input-box {
-    width: calc(99vw - 10px);
+    width: 95vw;
     border: 1px solid darkgrey;
     border-radius: 2px;
     background-color: rgb(40,40,40);
@@ -87,6 +87,7 @@ h1 {
 
 #command {
     color: red;
-    width: 10px;
+    width: 1vw;
+    font-size: calc(14px - 0.1vw);
     display: inline-block;
 }
