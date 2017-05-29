@@ -11,7 +11,7 @@ $(document).ready(function(){
 	puzzle = new Puzzle(0)
 
     $(document).keydown(function(key){
-        vale = $c.val();
+        vale = $c.val().toLowerCase();
 		if (key.which == 13){
 			$P.prepend('<p>> '+vale+': '+ action(vale)+'</p>');
 			$c.val("");
