@@ -7,31 +7,26 @@ $(document).ready(function(){
 	var $Q = $('.question-box');
 	var $C = $('.command-box');
 	var $P = $('.previous-commands')
-	var $c = $('#command');
+	var $c = $('#input-box');
 	puzzle = new Puzzle(0)
 
     $(document).keydown(function(key){
-        vale = $c.text();
-		if (key.which != 8 && (String.fromCharCode(key.which)).match(/[ A-Z0-9]/i)){
-			$c.text(vale + String.fromCharCode(key.which).toLowerCase());
-		} else if (key.which == 8){
-			if (vale.length > 2){
-				$c.text(vale.substring(0,vale.length-1));
-			}
-		} else if (key.which == 13){
-			$P.prepend('<p>'+vale+': '+ action(vale)+'</p>');
-			$c.text('> ');
+        vale = $c.val();
+		if (key.which == 13){
+			$P.prepend('<p>> '+vale+': '+ action(vale)+'</p>');
+			$c.val("");
 		}
     });
 });
 
 function action(keyword){
-	keyword = keyword.substring(2,keyword.length);
+	//keyword = keyword.substring(2,keyword.length);
 
 	if (!active){
         if (keyword == "start"){
     		active = true;
 			$('#command').css('color', 'rgb(5,200,5)');
+			$('#input-box').css('color', 'rgb(5,200,5)');
 			$('h1').css('color', 'rgb(5,200,5)');
 			$('h1').css('text-shadow', '2px 2px darkgreen');
 			$('#title-bar').css('outline-color', 'rgb(5,200,5)');

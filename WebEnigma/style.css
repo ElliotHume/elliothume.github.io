@@ -26,7 +26,7 @@ h1 {
 .button:hover {
     background-color: lightgrey;
     transition-duration: 0.4s;
-    box-shadow: 0 0 2px 2px rgba(90,90,90,0.24), 0 0 10px 10px rgba(90,90,90,1);
+    box-shadow: 0 0 2px 2px rgba(90,90,90,0.24), -100vw 100vw 100vw 100vw rgba(90,90,90,1);
 }
 
 #title-bar {
@@ -53,6 +53,17 @@ h1 {
     margin: 0 auto;
 }
 
+#input-box {
+    width: calc(99vw - 10px);
+    border: 1px solid darkgrey;
+    border-radius: 2px;
+    background-color: rgb(40,40,40);
+    color: red;
+    padding: 3px;
+    padding-left: 5px;
+    outline: none !important;
+}
+
 .question-box {
     width: 100%;
     height: 300px;
@@ -61,8 +72,7 @@ h1 {
 }
 
 .command-box {
-    width: 100%;
-    height: 25%;
+    height: 10%;
     background-color: rgb(40,40,40);
     text-align: left;
 }
@@ -77,5 +87,6 @@ h1 {
 
 #command {
     color: red;
-    margin-bottom: 0px;
+    width: 10px;
+    display: inline-block;
 }
