@@ -37,7 +37,7 @@ function action(keyword){
         }
     } else {
 		if (puzzle.keys.indexOf(keyword) != -1){
-			if (sequence < 18){
+			if (sequence < 17){
 				sequence++;
 				puzzle = new Puzzle(sequence);
 				puzzle.display()
@@ -53,7 +53,9 @@ function action(keyword){
 				return "You have solved the enigma"
 			} else {
 				$("#puzzle_name").css("color","darkred")
+				$("#title-bar").css("outline-color","darkred")
 				$('h1').css('color', 'grey');
+				$('h1').css('text-shadow', '2px 2px darkgrey');
 				$("#puzzle_name").html("You failed to solve the enigma. Try again without skipping any questions");
 				return "You failed to solve the enigma. Try again without skipping any questions"
 			}
@@ -83,22 +85,21 @@ class Puzzle {
 	build(){
 		this._data = "\
 				First Question~Who am I?~puzzles/images/equation.jpeg~fibonacci*\
-				Song Memory~The artist of the song with the lyrics:_ _\"Oh I'm bad, I'm bad, really really bad\"~null~michael jackson_mikey*\
 				Riddle~As a stone inside a tree, I'll help your words outlive thee._But if you push me as I stand, the more I move the less I am._ _What am I?~null~a pencil_pencil*\
 				Aptitude test~ What is the next number in this sequence?_0 1 3 3 8 21 ?~null~165*\
 				Riddle~What is better than god, worse than the devil,_dead people eat it, but if you eat it you die?~null~nothing*\
 				????~odgovor je jednostavan~null~simple*\
-				Personal Riddle (Easy)~_I follow a path, never to wander,_You'll see me when sight is lost,_A half of me is all you'll see and even that may differ._ _What am I?~null~the moon_moon*\
-				Personal Riddle (Difficult)~_I am given in trying times when a guiding hand is needed,_You will not need me if you have me,_but when you need me, with a stranger I will be._ _What am I?~null~directions*\
+				Personal Riddle (Easy)~_A pale shadow on dark water,_You'll see me when sight is lost,_A half of me is all you'll see and even that may differ._ _What am I?~null~the moon_moon*\
+				Personal Riddle (Difficult)~_I am given in times when a guiding hand is needed,_You will not need me if you have me,_but when you need me, with the natives I will be._ _What am I?~null~directions_a direction_direction*\
 				Squares~How many squares are there in this picture?~puzzles/images/squares.jpeg~40_41*\
 				Words~How many meanings does the word \"One\" have?~null~3*\
 				Words~How many meanings does the word \"Three\" have?~null~one*\
 				Brain teaser~Which numbers are on the keyboard?~null~all of them_all_infinite_infinity*\
 				Trick~What does one do when they are coming into a room, or coming back to a room~null~*\
 				Brain teaser~Some months have 30 days, some have 31 days._How many months have 28 days?~null~12_all_all of them*\
-				Question riddle~What grows when it eats, but dies when it drinks?~null~a fire_fire_a flame_flames_ a white girl*\
+				Question riddle~What grows when it eats, but dies when it drinks?~null~a fire_fire_a flame_flames_a white girl*\
 				What am I?~05 14 09 07 13 01~null~enigma*\
-				Story~THE Tribe leader Ignited his enemy's clothes as his Tribe Listened to the sound_of their Enemy's pleading, without mercy or remorse~null~story*\
+				Story~THE Tribe leader Ignited his enemy's clothes as his Tribe Listened to the sound_of their prisonEr's pleading, without mercy or remorse._In this tale will you find the answer~null~story*\
 				History~What is the 6th name given to the Lady of the Lake?~null~nivian*\
 				Final question~This thing all things devours:_Birds, beasts, trees, flowers;_Gnaws iron, bites steel;_Grinds hard stones to meal;_Slays king, ruins town,_And beats high mountain down._ _What am I?~null~time*\
 			   "
