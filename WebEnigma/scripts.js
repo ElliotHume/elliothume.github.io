@@ -58,18 +58,23 @@ function action(keyword){
 				$("#title-bar").css("outline-color","darkred")
 				$('h1').css('color', 'grey');
 				$('h1').css('text-shadow', '2px 2px darkgrey');
+				$('#title-bar').css('border-image', 'linear-gradient(to bottom, darkred, black) 1 100%')
 				$("#puzzle_name").html("You failed to solve the enigma. Try again without skipping any questions");
 				return "You failed to solve the enigma. Try again without skipping any questions"
 			}
 			
 		} else if (keyword == "skip"){
-			skips++;
 			if (sequence < 17){
+				skips++;
 				sequence++;
 				puzzle = new Puzzle(sequence);
 				puzzle.display()
 				return "Skipped"
+			} else {
+				return "You may not skip this question."
 			}
+		} else {
+			return "Incorrect"
 		}
 	}
 }
