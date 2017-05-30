@@ -20,14 +20,14 @@ $(document).ready(function(){
 });
 
 function action(keyword){
-	//keyword = keyword.substring(2,keyword.length);
+	keyword = keyword.trim();
 
 	if (!active){
         if (keyword == "start"){
     		active = true;
 			$('#command').css('color', 'rgb(5,200,5)');
 			$('#input-box').css('color', 'rgb(5,200,5)');
-			$('#title-bar').css('border-image', 'linear-gradient(to bottom, rgb(5,200,5), black) 1 100%')
+			$('#title-bar').css('border-image', 'linear-gradient(to bottom, rgb(5,200,5), black) 1 100%');
 			$('h1').css('color', 'rgb(5,200,5)');
 			$('h1').css('text-shadow', '2px 2px darkgreen');
 			$('#title-bar').css('outline-color', 'rgb(5,200,5)');
@@ -45,22 +45,22 @@ function action(keyword){
 				puzzle.display()
 				return "Correct"
 			}
-			$("#puzzle_name").css("text-align", "center")
+			$("#puzzle_name").css("text-align", "center");
 			$("#puzzle_text").html("");
 			$("#puzzle_image").attr("src", "");
 			if (skips == 0){
-				$("#puzzle_name").css("color","rgb(5,200,5)")
+				$("#puzzle_name").css("color","rgb(5,200,5)");
 				$('h1').css('color', 'grey');
 				$("#puzzle_name").html("You have solved the enigma");
-				return "You have solved the enigma"
+				return "You have solved the enigma";
 			} else {
-				$("#puzzle_name").css("color","darkred")
-				$("#title-bar").css("outline-color","darkred")
+				$("#puzzle_name").css("color","darkred");
+				$("#title-bar").css("outline-color","darkred");
 				$('h1').css('color', 'grey');
 				$('h1').css('text-shadow', '2px 2px darkgrey');
-				$('#title-bar').css('border-image', 'linear-gradient(to bottom, darkred, black) 1 100%')
+				$('#title-bar').css('border-image', 'linear-gradient(to bottom, darkred, black) 1 100%');
 				$("#puzzle_name").html("You failed to solve the enigma. Try again without skipping any questions");
-				return "You failed to solve the enigma. Try again without skipping any questions"
+				return "You failed to solve the enigma. Try again without skipping any questions";
 			}
 			
 		} else if (keyword == "skip"){
@@ -68,13 +68,13 @@ function action(keyword){
 				skips++;
 				sequence++;
 				puzzle = new Puzzle(sequence);
-				puzzle.display()
-				return "Skipped"
+				puzzle.display();
+				return "Skipped";
 			} else {
-				return "You may not skip this question."
+				return "You may not skip this question.";
 			}
 		} else {
-			return "Incorrect"
+			return "Incorrect";
 		}
 	}
 }
@@ -111,8 +111,8 @@ class Puzzle {
 				History~What is the 6th name given to the Lady of the Lake?~null~true~nivian*\
 				Final question~This thing all things devours:_Birds, beasts, trees, flowers;_Gnaws iron, bites steel;_Grinds hard stones to meal;_Slays king, ruins town,_And beats high mountain down._ _What am I?~null~~time*\
 			   "
-		this.lines = this._data.split("*")
-		this.contentsList = this.lines[this.sequence].split("~")
+		this.lines = this._data.split("*");
+		this.contentsList = this.lines[this.sequence].split("~");
 		this.name = this.contentsList[0];
 		this.text = this.contentsList[1].split("_");
 		this.pic = (this.contentsList[2] != "null") ? this.contentsList[2] : null;
@@ -128,9 +128,9 @@ class Puzzle {
 		} 
 		$("#puzzle_image").attr("src", this.pic);
 		if (this.google) {
-			$("#google-icon").attr("src", "puzzles/images/googlecheck.png")
+			$("#google-icon").attr("src", "puzzles/images/googlecheck.png");
 		} else {
-			$("#google-icon").attr("src", "puzzles/images/googlex.png")
+			$("#google-icon").attr("src", "puzzles/images/googlex.png");
 		}
 	}
 }
