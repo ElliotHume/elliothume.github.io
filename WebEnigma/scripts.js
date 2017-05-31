@@ -45,7 +45,9 @@ function action(keyword){
 				puzzle.display()
 				return "Correct"
 			}
+			$("#google-icon").hide();
 			$("#puzzle_name").css("text-align", "center");
+			$("#puzzle_name").css("width", "100%");
 			$("#puzzle_text").html("");
 			$("#puzzle_image").attr("src", "");
 			if (skips == 0){
@@ -74,6 +76,7 @@ function action(keyword){
 				return "You may not skip this question.";
 			}
 		} else {
+			//console.log(decrypt(puzzle.alt_data));
 			return "Incorrect";
 		}
 	}
@@ -91,26 +94,7 @@ class Puzzle {
 	}
 
 	build(){
-		this._data = "\
-				First Question~Who am I?~puzzles/images/equation.jpeg~true~fibonacci*\
-				Riddle~As a stone inside a tree, I'll help your words outlive thee._But if you push me as I stand, the more I move the less I am._ _What am I?~null~~a pencil_pencil*\
-				Aptitude test~ What is the next number in this sequence?_0 1 3 3 8 21 ?~null~true~165*\
-				Riddle~What is better than god, worse than the devil,_dead people eat it, but if you eat it you die?~null~~nothing*\
-				????~odgovor je jednostavan~null~true~simple*\
-				Personal Riddle (Easy)~_A pale shadow on dark water,_You'll see me when sight is lost,_A half of me is all you'll see and even that may differ._ _What am I?~null~~the moon_moon*\
-				Personal Riddle (Difficult)~_I am given in times when a guiding hand is needed,_You will not need me if you have me,_but when you need me, with the natives I will be._ _What am I?~~null~directions_a direction_direction*\
-				Squares~How many squares are there in this picture?~puzzles/images/squares.jpeg~~40_41*\
-				Words~How many meanings does the word \"One\" have?~null~true~3*\
-				Words~How many meanings does the word \"Three\" have?~null~true~one*\
-				Brain teaser~Which numbers are on the keyboard?~~null~all of them_all_infinite_infinity*\
-				Trick~What does one do when they are coming into a room, or coming back to a room~null~~*\
-				Brain teaser~Some months have 30 days, some have 31 days._How many months have 28 days?~null~~12_all_all of them*\
-				Question riddle~What grows when it eats, but dies when it drinks?~null~~a fire_fire_a flame_flames_teenagers*\
-				What am I?~05 14 09 07 13 01~null~~enigma*\
-				Story~THE Tribe leader Ignited his enemy's clothes as his Tribe Listened to the sound_of their prisonEr's pleading, without mercy or remorse._In this tale will you find the answer~null~~story*\
-				History~What is the 6th name given to the Lady of the Lake?~null~true~nivian*\
-				Final question~This thing all things devours:_Birds, beasts, trees, flowers;_Gnaws iron, bites steel;_Grinds hard stones to meal;_Slays king, ruins town,_And beats high mountain down._ _What am I?~null~~time*\
-			   "
+		this._data = decrypt("Fcnuj Qmsujcbg~Wdb qt I?~ymppvsu/ctqesu/shmqjcbg.ryse~jnms~xcabgqzzc*				Rcwwvs~Au q ujbgs cgucws q jnss, I'vv dsvy lbmn kbnwu bmjvcis jdss._Bmj cx lbm ymud ts qu I ujqgw, jds tbns I tbis jds vsuu I qt._ _Wdqj qt I?~gmvv~~q ysgzcv_ysgzcv*				Ayjcjmws jsuj~ Wdqj cu jds gsoj gmtasn cg jdcu ushmsgzs?_0 1 3 3 8 21 ?~gmvv~jnms~165*				Rcwwvs~Wdqj cu asjjsn jdqg ebw, kbnus jdqg jds wsicv,_wsqw ysbyvs sqj cj, amj cx lbm sqj cj lbm wcs?~gmvv~~gbjdcge*				????~bwebibn rs rswgbujqiqg~gmvv~jnms~uctyvs*				Psnubgqv Rcwwvs (Equl)~_A yqvs udqwbk bg wqnf kqjsn,_Ybm'vv uss ts kdsg ucedj cu vbuj,_A dqvx bx ts cu qvv lbm'vv uss qgw sisg jdqj tql wcxxsn._ _Wdqj qt I?~gmvv~~jds tbbg_tbbg*				Psnubgqv Rcwwvs (Dcxxczmvj)~_I qt ecisg cg jctsu kdsg q emcwcge dqgw cu gsswsw,_Ybm kcvv gbj gssw ts cx lbm dqis ts,_amj kdsg lbm gssw ts, kcjd jds gqjcisu I kcvv as._ _Wdqj qt I?~~gmvv~wcnszjcbgu_q wcnszjcbg_wcnszjcbg*				Shmqnsu~Hbk tqgl uhmqnsu qns jdsns cg jdcu yczjmns?~ymppvsu/ctqesu/uhmqnsu.ryse~~40_41*				Wbnwu~Hbk tqgl tsqgcgeu wbsu jds kbnw \"Ogs\" dqis?~gmvv~jnms~3*				Wbnwu~Hbk tqgl tsqgcgeu wbsu jds kbnw \"Tdnss\" dqis?~gmvv~jnms~bgs*				Bnqcg jsqusn~Wdczd gmtasnu qns bg jds fslabqnw?~~gmvv~qvv bx jdst_qvv_cgxcgcjs_cgxcgcjl*				Tnczf~Wdqj wbsu bgs wb kdsg jdsl qns zbtcge cgjb q nbbt, bn zbtcge aqzf jb q nbbt~gmvv~~*				Bnqcg jsqusn~Sbts tbgjdu dqis 30 wqlu, ubts dqis 31 wqlu._Hbk tqgl tbgjdu dqis 28 wqlu?~gmvv~~12_qvv_qvv bx jdst*				Qmsujcbg ncwwvs~Wdqj enbku kdsg cj sqju, amj wcsu kdsg cj wncgfu?~gmvv~~q xcns_xcns_q xvqts_xvqtsu_jssgqesnu*				Wdqj qt I?~05 14 09 07 13 01~gmvv~~sgcetq*				Sjbnl~THE Tncas vsqwsn Iegcjsw dcu sgstl'u zvbjdsu qu dcu Tncas Lcujsgsw jb jds ubmgw_bx jdscn yncubgEn'u yvsqwcge, kcjdbmj tsnzl bn nstbnus._Ig jdcu jqvs kcvv lbm xcgw jds qguksn~gmvv~~ujbnl*				Hcujbnl~Wdqj cu jds 6jd gqts ecisg jb jds Lqwl bx jds Lqfs?~gmvv~jnms~gcicqg*				Fcgqv hmsujcbg~Tdcu jdcge qvv jdcgeu wsibmnu:_Bcnwu, asquju, jnssu, xvbksnu;_Ggqku cnbg, acjsu ujssv;_Gncgwu dqnw ujbgsu jb tsqv;_Svqlu fcge, nmcgu jbkg,_Agw asqju dced tbmgjqcg wbkg._ _Wdqj qt I?~gmvv~~jcts*			   ");
 		this.lines = this._data.split("*");
 		this.contentsList = this.lines[this.sequence].split("~");
 		this.name = this.contentsList[0];
@@ -135,3 +119,32 @@ class Puzzle {
 	}
 }
 
+function decrypt(message){
+	alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+	U_alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+    keys = "qazwsxedcrfvtgbyhnujmikolp".split("");
+	U_keys = "qazwsxedcrfvtgbyhnujmikolp".toUpperCase().split("");
+
+
+    keydict = {};
+    for(var i=0; i < alphabet.length; i++){
+		keydict[keys[i]] = alphabet[i];
+	}
+
+    U_keydict = {};
+    for(var i=0; i < U_alphabet.length; i++){
+		U_keydict[U_keys[i]] = U_alphabet[i];
+	}
+
+    loc = message.split("");
+    for (var i=0; i < loc.length; i++){
+		if($.inArray(loc[i], alphabet) != -1 ){
+			if(loc[i] == loc[i].toLowerCase()){
+				loc[i] = keydict[loc[i]];
+			} else {
+				loc[i] = U_keydict[loc[i]];
+			}
+		}
+	}
+    return loc.join("");
+}
