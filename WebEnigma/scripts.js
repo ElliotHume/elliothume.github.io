@@ -25,12 +25,17 @@ function action(keyword){
 	if (!active){
         if (keyword == "start"){
     		active = true;
+			$("h1").css("width", "0vw");
+			$('.skip-button').css("display","inline");
+			$('.button').css("display","inline");
 			$('#command').css('color', 'rgb(5,200,5)');
 			$('#input-box').css('color', 'rgb(5,200,5)');
 			$('#title-bar').css('border-image', 'linear-gradient(to bottom, rgb(5,200,5), black) 1 100%');
 			$('h1').css('color', 'rgb(5,200,5)');
 			$('h1').css('text-shadow', '2px 2px darkgreen');
 			$('#title-bar').css('outline-color', 'rgb(5,200,5)');
+			$('#title-bar').css('cursor', '');
+			$('#title-bar').attr("onclick", "#");
 			$("#google-icon").css("display", "inline");
 			puzzle.display()
     		return "let the games begin, you may skip puzzles with the keyword 'skip'";
@@ -67,11 +72,7 @@ function action(keyword){
 			
 		} else if (keyword == "skip"){
 			if (sequence < 17){
-				skips++;
-				sequence++;
-				puzzle = new Puzzle(sequence);
-				puzzle.display();
-				return "Skipped";
+				return skipPuzzle(false);
 			} else {
 				return "You may not skip this question.";
 			}
@@ -117,6 +118,31 @@ class Puzzle {
 			$("#google-icon").attr("src", "puzzles/images/googlex.png");
 		}
 	}
+}
+
+function skipPuzzle(bol) {
+	if(bol){
+		if (sequence < 17){
+			skips++;
+			sequence++;
+			$('.previous-commands').prepend('<p>> skip: Skipped </p>');
+			puzzle = new Puzzle(sequence);
+			puzzle.display();
+		} else {
+			$('.previous-commands').prepend('<p>> skip: You may not skip this question. </p>');
+		}
+	} else {
+		skips++;
+		sequence++;
+		puzzle = new Puzzle(sequence);
+		puzzle.display();
+		return "Skipped";
+	}
+	
+}
+
+function titleClick(){
+	$("#input-box").val("Enigma");
 }
 
 function decrypt(message){

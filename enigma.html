@@ -4,13 +4,14 @@
         <title>Enigma</title>
         <link rel='stylesheet' type='text/css' href='WebEnigma/style.css'/>
         <script src='WebEnigma/jquery-3.2.1.js'></script>
-		<script type='text/javascript' src='WebEnigma/scripts-min.js'></script>
+		<script type='text/javascript' src='WebEnigma/scripts.js'></script>
     </head>
     <body>
-        <div id="title-bar">
+        <div id="title-bar" style="cursor: pointer" onclick="titleClick()">
             <h1>Enigma</h1>
             <form style="float: right; vertical-align: center; margin-top:15px; margin-right:10px;">
-                <input class="button" type="button" onClick="history.go(0)" value="Restart">
+                <input class="skip-button" type="button" onClick="skipPuzzle(true)" value="Skip puzzle" style="display: none">
+                <input class="button" type="button" onClick="history.go(0)" value="Restart" style="display: none">
             </form>
         </div>
         <div id="content">
