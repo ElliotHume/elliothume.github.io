@@ -273,8 +273,13 @@ nav {
     font-size: 15px;
   }
 	
-  h2 {
+  h2 a{
+    display: inline-flex;
+    margin: 1.5em 0 0 1em;
     color: crimson;
+  }
+  img {
+    height:100px;
   }
 }
 
