@@ -6,8 +6,9 @@
         <script src='WebEnigma/jquery-3.2.1.js'></script>
 		<script type='text/javascript' src='WebEnigma/scripts-min.js'></script>
     </head>
-    <body>
+    <body scroll="no">
         <div id="title-bar" style="cursor: pointer" onclick="titleClick()">
+            <img id="google-icon" src="" title="Is google allowed for the current puzzle (green = yes, red = no)"/>
             <h1>Enigma</h1>
             <form style="float: right; vertical-align: center; margin-top:15px; margin-right:10px;">
                 <input class="skip-button" type="button" onClick="skipPuzzle(true)" value="Skip puzzle" style="display: none">
@@ -18,7 +19,6 @@
             <div class="question-box">
                 <div id="top-bar">
                     <p id="puzzle_name"></p>
-                    <img id="google-icon" src="" title="Is google allowed:"/>
                 </div>
                 <img id="puzzle_image" src=""/>
                 <div id="puzzle_text"></div>

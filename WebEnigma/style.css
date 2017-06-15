@@ -1,23 +1,23 @@
 body {
     width: 100vw;
-    height: 99vh;
-    margin: 0px auto;
-    /*padding-left: 30vw;*/
-    background-color: rgb(30,30,30);
-    background: radial-gradient(rgb(30,30,30) 67%, black);
+    height: 100vh;
+    margin: 0px;
+    background-color: #667292;
+    background: linear-gradient(to bottom right, #667292 50%, #6d7a9e);
     font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    border: 1px solid #f1e3dd;
 }
 
 h1 {
     display: inline-block;
-    /*width: 5vw;*/
     text-align: center;
-    color: red;
+    color: #f1e3dd;
     font-size: 45px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0px;
     margin-bottom: 5px;
-    text-shadow: 2px 2px darkred;
+    text-shadow: 2px 2px black;
 }
 
 .button, .skip-button {
@@ -25,46 +25,49 @@ h1 {
     background-color: darkgrey;
 }
 
-.button:hover {
-    background-color: lightgrey;
+.button:hover, .skip-button:hover {
+    background-color: #f1e3dd;
     transition-duration: 0.4s;
-    box-shadow: 0 0 2px 2px rgba(90,90,90,0.24), 0 -90vw 10vw 100vw rgba(90,90,90,1);
+    /*box-shadow: 0 0 2px 2px rgba(90,90,90,0.24), 0 -90vw 10vw 100vw rgba(90,90,90,1);*/
 }
 
 #title-bar {
     text-align: center;
-    margin: 3px;
-    outline: 1px solid darkred;
-    background-color: black;
-    background: linear-gradient(to bottom right, black, rgb(30,30,30));
-    border: 6px solid darkred;
-    border-image: linear-gradient(to bottom, darkred, black) 1 100%;
+    outline: 2px solid #f1e3dd;
+    background-color: #667292;
+    background: linear-gradient(to bottom, #667292, rgb(55,55,65));
+    border: 3px solid #667292;
+    border-image: linear-gradient(to bottom, #667292, black) 1 10%;
 }
 
 #puzzle_name  {
     width: 70vw;
     font-size: 25px;
-    color: lightgrey;
+    color: #f1e3dd;
     float: left;
+    padding-bottom: 4px;
+    text-decoration: underline;
+    font-variant: small-caps;
 }
 
 #puzzle_text{
     font-size: 16px;
-    color: white;
+    color: #f1e3dd;
 }
 
 #puzzle_image {
     font-style: italic;
     display: block;
     margin: 0 auto;
+    border: 2px solid black
 }
 
 #input-box {
     width: 95vw;
-    border: 1px solid darkgrey;
+    border: 1px solid #f1e3dd;
     border-radius: 2px;
-    background-color: rgb(40,40,40);
-    color: red;
+    background-color: #8d9db6;
+    color: #f1e3dd;
     padding: 3px;
     padding-left: 5px;
     outline: none !important;
@@ -72,26 +75,29 @@ h1 {
 }
 
 .question-box {
-    width: 100%;
+    width: 99%;
     min-height: 300px;
-    background-color: rgb(30,30,30);
+    background-color: #667292;
     text-align: left;
+    padding-left: 5px;
 }
 
 .command-box {
     height: 50px;
     position: relative;
-    background-color: rgb(40,40,40);
-    background: radial-gradient(rgb(40,40,40) 80%, rgb(30,30,30));
+    background-color: #8d9db6;
+    background: radial-gradient(#667292 70%, #8d9db6);
     border-radius: 4px;
     text-align: left;
+    border: 0.5px solid #f1e3dd;
+    padding-left: 5px;
 }
 
 .previous-commands {
-    width: 100%;
-    height: 25%;
-    background-color: rgb(30,30,30);
-    color: grey;
+    width: auto;
+    padding: 1px;
+    border-radius: 4px;
+    color: #f1e3dd;
     text-align: left;
 }
 
@@ -109,6 +115,16 @@ h1 {
 
 #google-icon {
     display: none;
-    padding: 1.5vw;
-    float: right;
+    padding: 0.6vw;
+    float: left;
+}
+
+#content {
+    min-height: 91.1%;
+    width: 99.7%;
+    border: 2px solid white;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
 }
