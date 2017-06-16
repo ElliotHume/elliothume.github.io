@@ -10,12 +10,19 @@ $(document).ready(function(){
 	var $c = $('#input-box');
 	puzzle = new Puzzle(0)
 
+	$(document).bind("contextmenu",function(e) {
+		e.preventDefault();
+	});
+
     $(document).keydown(function(key){
         vale = $c.val().toLowerCase();
 		if (key.which == 13){
 			$P.prepend('<p>> '+vale+': '+ action(vale)+'</p>');
 			$c.val("");
 		}
+		if(key.which === 123){
+       		return false;
+    	}
     });
 });
 
@@ -43,7 +50,7 @@ function action(keyword){
             return "What do you need to do to finish a race?";
         }
     } else {
-		if (puzzle.keys.indexOf(keyword) != -1){
+		if (puzzle.keys.indexOf(encrypt(keyword)) != -1){
 			if (sequence < 24){
 				sequence++;
 				puzzle = new Puzzle(sequence);
@@ -102,7 +109,9 @@ class Puzzle {
 		this.text = this.contentsList[1].split("_");
 		this.pic = (this.contentsList[2] != "null") ? this.contentsList[2] : null;
 		this.google = (this.contentsList[3] == "true")? true:false ;
-		this.keys = this.contentsList[4].split("_");
+		this.keys = encrypt(this.contentsList[4]).split("_");
+		this._data = null;
+		this.lines = null;
 	}
 
 	display(){
@@ -165,6 +174,36 @@ function decrypt(message){
     U_keydict = {};
     for(var i=0; i < U_alphabet.length; i++){
 		U_keydict[U_keys[i]] = U_alphabet[i];
+	}
+
+    loc = message.split("");
+    for (var i=0; i < loc.length; i++){
+		if($.inArray(loc[i], alphabet) != -1 ){
+			if(loc[i] == loc[i].toLowerCase()){
+				loc[i] = keydict[loc[i]];
+			} else {
+				loc[i] = U_keydict[loc[i]];
+			}
+		}
+	}
+    return loc.join("");
+}
+
+function encrypt(message){
+	alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+	U_alphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+    keys = "zaqxswcdevfrbgtnhymjukilop".split("");
+	U_keys = "zaqxswcdevfrbgtnhymjukilop".toUpperCase().split("");
+
+
+    keydict = {};
+    for(var i=0; i < alphabet.length; i++){
+		keydict[alphabet[i]] = keys[i];
+	}
+
+    U_keydict = {};
+    for(var i=0; i < U_alphabet.length; i++){
+		U_keydict[U_alphabet[i]] = U_keys[i];
 	}
 
     loc = message.split("");
