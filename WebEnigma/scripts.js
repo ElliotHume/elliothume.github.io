@@ -18,7 +18,7 @@ $(document).ready(function(){
     $(document).keydown(function(key){
         vale = $c.val().toLowerCase();
 		if (key.which == 13){
-			if (vale.length > 0){
+			if (vale.length > 0 || sequence==12){
 				$P.prepend('<p>> '+vale+': '+ action(vale)+'</p>');
 				$c.val("");
 			}
@@ -38,15 +38,18 @@ function action(keyword){
 			return "The rules are as follows:";
 		case "clear":
 			clearPrevious();
-			return "Cleared previous commands."
+			return "Cleared previous commands.";
 		case "alan turing":
 			if (!turing_bonus){
 				skips--;
 				turing_bonus = true;
-				return "Welcome sir, +1 skip unlocked"
+				return "Welcome sir, +1 skip unlocked";
 			} else {
-				return "Welcome sir"
+				return "Welcome sir";
 			}
+		case "restart":
+			history.go(0)
+			return "RESTARTING..."
 	}
 
 	if (!active){
@@ -56,11 +59,6 @@ function action(keyword){
 			$('.skip-button').css("display","inline");
 			$('.button').css("display","inline");
 			$('#command').css('color', 'rgb(5,200,5)');
-			//$('#input-box').css('color', 'rgb(5,200,5)');
-			//$('#title-bar').css('border-image', 'linear-gradient(to bottom, rgb(5,200,5), black) 1 100%');
-			//$('h1').css('color', 'rgb(5,200,5)');
-			//$('h1').css('text-shadow', '2px 2px darkgreen');
-			//$('#title-bar').css('outline-color', 'rgb(5,200,5)');
 			$('#title-bar').css('cursor', '');
 			$('#title-bar').attr("onclick", "#");
 			$("#google-icon").css("display", "inline");
