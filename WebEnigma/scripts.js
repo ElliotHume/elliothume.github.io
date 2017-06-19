@@ -2,6 +2,7 @@ var active = false;
 var sequence = 0;
 var puzzle = null;
 var skips = 0;
+var turing_bonus = false;
 
 $(document).ready(function(){
 	var $Q = $('.question-box');
@@ -17,8 +18,10 @@ $(document).ready(function(){
     $(document).keydown(function(key){
         vale = $c.val().toLowerCase();
 		if (key.which == 13){
-			$P.prepend('<p>> '+vale+': '+ action(vale)+'</p>');
-			$c.val("");
+			if (vale.length > 0){
+				$P.prepend('<p>> '+vale+': '+ action(vale)+'</p>');
+				$c.val("");
+			}
 		}
 		if(key.which === 123){
        		return false;
@@ -29,9 +32,21 @@ $(document).ready(function(){
 function action(keyword){
 	keyword = keyword.trim();
 
-	if (keyword == "rules"){
-		ruleClick();
-		return "The rules are as follows:";
+	switch(keyword){
+		case "rules":
+			ruleClick();
+			return "The rules are as follows:";
+		case "clear":
+			clearPrevious();
+			return "Cleared previous commands."
+		case "alan turing":
+			if (!turing_bonus){
+				skips--;
+				turing_bonus = true;
+				return "Welcome sir, +1 skip unlocked"
+			} else {
+				return "Welcome sir"
+			}
 	}
 
 	if (!active){
@@ -193,13 +208,17 @@ function titleClick(){
 }
 
 function ruleClick(){
-	$('.previous-commands').prepend('<p>> 7: All victors may submit a puzzle to be added to the Enigma. If you do solve the Enigma, send me an email with a screen shot of the victory screen and your puzzle that you wish to add, I will check the log files to make sure your victory is legitimate and then will add your puzzle to the game so long as I find it to be well fit for the Enigma. Your submitted puzzle must include the puzzle\'s title, the puzzle question, all acceptable answers, an image(if it is a visual puzzle), and a true/false for if the player can use google. Please keep the puzzle answers to a maximum of 3-4 words (no sentences or complex theories). </p>');
+	$('.previous-commands').prepend('<p>> 7: All victors may submit a puzzle to be added to the Enigma. If you do solve the Enigma, send me an email with a screen shot of the victory screen and your puzzle that you wish to add, I will check the log files to make sure your victory is legitimate and then will add your puzzle to the game so long as I find it to be well fit for the Enigma. Your submitted puzzle must include the puzzle\'s title, the puzzle question, all acceptable answers, an image(if it is a visual puzzle), and a true/false for if the player can use google. Please keep the puzzle answers to a maximum of 3-4 words (no sentences or complex theories). Email: xelerayte@gmail.com </p>');
 	$('.previous-commands').prepend('<p>> 6: Have fun! Please do not take the game too seriously, it is designed to be a fun challenge for those who enjoy puzzles and brain teasers. </p>');
 	$('.previous-commands').prepend('<p>> 5: At any time you may restart by pressing the restart button in the top right corner, there is no limit to the amount of attempts you have. </p>');
 	$('.previous-commands').prepend('<p>> 4: Do not cheat. This game uses an honor system. I am aware that there are ways to cheat and I ask that you would please not use them. I use log files and will be able to see if/when your victory is legitimate. </p>');
 	$('.previous-commands').prepend('<p>> 3: You may use google for questions that have a green check mark in the top left corner, you may not if there is a red x. </p>');
 	$('.previous-commands').prepend('<p>> 2: You may skip up to 3 questions by using the keyword "skip" or by pressing the skip button in the top right corner </p>');
 	$('.previous-commands').prepend('<p>> 1: Answer the puzzles by typing in the command box and pressing enter to submit. </p>');
+}
+
+function clearPrevious(){
+	$('.previous-commands').html('');
 }
 
 function encrypt(message){
