@@ -4,6 +4,8 @@ var puzzle = null;
 var skips = 0;
 var turing_bonus = false;
 var sequence_length = 30;
+var command_list = [];
+var command_index = 0;
 
 $(document).ready(function(){
 	var $Q = $('.question-box');
@@ -21,12 +23,23 @@ $(document).ready(function(){
 		if (key.which == 13){
 			if (vale.length > 0 || puzzle.keys[0]==""){
 				$P.prepend('<p>> '+vale+': '+ action(vale)+'</p>');
+				command_list.push(vale);
+				command_index = 0;
 				$c.val("");
 			}
-		}
-		if(key.which === 123){
+		} else if (key.which === 123){
        		return false;
-    	}
+    	} else if (key.which == 38){
+			$c.val(command_list[(command_list.length - 1 - command_index)]);
+			if (command_index < command_list.length-1){
+				command_index++;
+			}
+		} else if (key.which == 40){
+			$c.val(command_list[(command_list.length - 1 - command_index)]);
+			if (command_index >= 0){
+				command_index--;
+			}
+		}
     });
 });
 
@@ -46,11 +59,13 @@ function action(keyword){
 				turing_bonus = true;
 				return "Welcome sir, +1 skip unlocked";
 			} else {
-				return "Welcome sir";
+				return "You have already logged in sir, no further identification is required.";
 			}
 		case "restart":
 			history.go(0)
 			return "RESTARTING..."
+		case "skips":
+			return "You have "+(8 - skips)+" skips remaining."
 	}
 
 	if (!active){
@@ -64,7 +79,7 @@ function action(keyword){
 			$('#title-bar').attr("onclick", "#");
 			$("#google-icon").css("display", "inline");
 			puzzle.display()
-    		return "let the games begin, you may skip up to 5 puzzles with the keyword 'skip' or the button.";
+    		return "let the games begin, you may skip up to 8 puzzles with the keyword 'skip' or the button.";
         } else if (keyword == "enigma"){
             return "What do you need to do to finish a race?";
         }
@@ -164,10 +179,11 @@ class Puzzle {
 		this.name = this.contentsList[0];
 		this.text = this.contentsList[1].split("_");
 		this.pic = (this.contentsList[2] != "null") ? this.contentsList[2] : null;
-		this.google = (this.contentsList[3] == "true")? true:false ;
+		this.google = (this.contentsList[3] == "true") ? true:false ;
 		this.keys = encrypt(this.contentsList[4]).split("_");
 		this._data = null;
 		this.lines = null;
+		this.contentsList = null;
 	}
 
 	display(){
