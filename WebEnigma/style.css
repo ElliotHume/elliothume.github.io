@@ -60,7 +60,8 @@ h1 {
     font-style: italic;
     display: block;
     margin: 0 auto;
-    border: 2px solid black
+    border: 2px solid black;
+    display: none;
 }
 
 #input-box {
@@ -81,6 +82,7 @@ h1 {
     background-color: #667292;
     text-align: left;
     padding-left: 5px;
+    position: relative;
 }
 
 .command-box {
@@ -129,4 +131,13 @@ h1 {
     border-bottom-style: ridge;
     border-left-style: ridge;
     border-right-style: ridge;
+}
+
+#victor{
+    float: right;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: lightgrey;
 }
