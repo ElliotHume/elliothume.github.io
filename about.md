@@ -7,11 +7,12 @@ permalink: /about/
 ### More Information
 
 I am a university student programmer living in Ottawa with experience in multiple fields, including:
+-  Web development
 -  Software test design/implementation
 -  Game development
 -  User experience testing
 
-My hobbies are: programming (clearly), singing (choirs, barbershop quartets, small ensembles) and hiking.
+My hobbies are: programming (clearly), singing (choirs, barbershop quartets, small ensembles) and sleight of hand.
 
 ### Contact me
 
