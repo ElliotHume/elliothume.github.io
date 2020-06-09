@@ -50,9 +50,9 @@ Once I reduced all the code into a more maintanable state to continue developeme
 
 When I finished implementing these features the game was in a much better place, it now felt like you really *were* the player instead of just being in control of a game object. From this point on I started to work on polish and game-feel so that it felt more like a game and less like a tech demo. I made the AI **much** smarter, to the point where even I had trouble beating it, and created better UI elements in more accessible places (on the drawing tablet, wrists) so that the game state was more visible.
 
-Throughout this whole process I also had to constantly manage optimization problems since the Oculus Quest has very low processing power compared to PC VR headsets. I cosntantly had to cutdown textures and poly-counts to maintain the 72FPS that the Quest headset requires for the best playing experience.
+Throughout this whole process I also had to constantly manage optimization problems since the Oculus Quest has very low processing power compared to PC VR headsets. I constantly had to cutdown textures and poly-counts to maintain the 72FPS that the Quest headset requires for the best playing experience. To help with this I taught myself how to use Blender and the Unity Shader Graph to upgrade the graphics of the game while still keeping them within the limitations. 
 
-Now we arrive at where the game is today. There is still much more to do (like add more content, perhaps boss battles?) but where the game stands now is something that I am proud to put in my portfolio of projects
+Now we arrive at where the game is today. There is still much more to do (like add more content, perhaps some boss battles?) but where the game stands now is something that I am happy to include in my portfolio of projects.
 
 [Video of the most recent prototype!](https://drive.google.com/file/d/1uMh-VzbjQ6_ujYMGR3vqL3E0O-7hHtpv/view?usp=sharing)
 
