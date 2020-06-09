@@ -1,0 +1,105 @@
+---
+layout: post
+title: Resume
+---
+
+## Experience
+----
+#### [Shoebox](https://shoebox.md)           (Summer intern, Summer 2018 & 2019)
+I worked as a full-stack web developer on the company's internal operations web tool for a combined total of 8 months.
+- Wrote and refactored React-Redux Javascript code.
+- Wrote and refactored Java back-end code.
+- Agile environment
+
+
+
+#### [Canadian Internet Registration Authority](https://cira.ca/)           (Summer intern, Summer 2017)
+I worked as a developer on an internet performance test web application. [CIRA IPT](https://performance.cira.ca/).
+- Wrote and refactored Django back-end python code
+- Created and edited Javascript front-end pages and panels.
+- Worked with PostgreSQL databases creating tables, queries and views.
+- Created Python scripts used to handle large csv files containing internet performance data for cities.
+- Updated the postal code GIS regions and GIS region detection system for the data map.
+- Agile environment
+
+
+
+#### [Halogen Software (now Saba Software)](https://www.saba.com/)           (Summer intern, Summer 2016)
+I implemented the testing framework for a web tool designed to automate commonly used processes in technical solutions.
+- Created unit tests for the middleware Node.js server
+- Used the Protractor library to end-to-end test the front-end
+- Worked with the Angular JS framework
+- Learned Agile/Kanban methodologies
+
+
+## Skills
+----
+
+#### Programming and technology
+
+- Learned languages include: Python, C#, Java, Javascript, Bash, SQL, Haskell, and C
+- Experience with Unity game development engine, UnityXR, and the Unity Universal Render Pipeline
+- Proficient with GitLabs, Github, Mercurial, and Tortoise version control platforms 
+- HTML coding and video editing/analysis for Neo Insight Inc.
+- Programming contests: Canadian Computing Competition, Educational Computing Contest
+
+
+#### Volunteering	
+
+- Cashier for Ten-thousand villages sale 2014
+- Transportation assistant for Ottawa Jazz Fest 2015
+
+
+## Education
+----
+- Queen’s University Bachelor of Computing (Hons.) in Software Design, with a specialty of Game Development (June 2020)
+- Grade 12 Canterbury High School, Vocal Arts Program	(September 2012 – June 2016)
+
+
+
+## Attributes
+----
+
+- Honor roll student who is interested in sciences, mathematics and design principles.
+- An approachable person who always looks for a way to find a compromise, or solve a problem efficiently. 
+
+## Achievements##
+
+----
+
+- Bass singer in the #1 youth barbershop quartet in Ottawa, “The Suspicious Harmonies”.
+
+
+## Programming aptitude examples##
+
+----
+
+### University capstone project and personal project
+Runic Warfare is the game that I created in partnership with Ian Hume and Eric Du for our university capstone project. The game is a networked PvP magic duelling game. 
+
+We originally created this game as a PC game, but in the summer of 2020 I personally expanded the game to also include VR gameplay for the Oculus Quest.
+I go into more detail on the GitHub page (linked below) and I encourage you to check out the game trailer there!
+
+Link: [Runic Warfare](https://github.com/Humeian/Runic-Warfare).
+
+---
+
+
+#### Personal project for learning Java
+Magicks Dominion is a player-vs-player game where opponents compete for resources and territory through rituals and battles. The objective is to eradicate the opposing player. This game is early in development.
+
+Github: [Magicks Dominion](http://github.com/elliothume/magicks-dominion).
+
+---
+
+#### Personal project for learning Web design: Enigma
+Enigma is a short but very challenging puzzle/riddle game designed to be a fun mental challenge.
+
+Link: [Enigma](https://elliothume.github.io/Enigma/).
+
+---
+
+
+
+----
+****
