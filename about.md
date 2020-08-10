@@ -6,11 +6,13 @@ permalink: /about/
 
 ### More Information
 
-I am a university student programmer living in Ottawa with experience in multiple fields, including:
+I am a programmer living in Ottawa with experience in multiple fields, including:
 -  Web development
 -  Software test design/implementation
 -  Game development
 -  User experience testing
+
+Queen's University BCMPH in Software Design, Game Development
 
 My hobbies are: programming (clearly), singing (choirs, barbershop quartets, small ensembles) and sleight of hand.
 
