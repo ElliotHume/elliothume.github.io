@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Runic Warfare
+title: Labyrinthian
 ---
 ## See the GitHub page [HERE](https://github.com/ElliotHume/LabyrinthianVR) ##
 
