@@ -6,7 +6,7 @@ title: Labyrinthian
 
 
 # [See it on GitHub](https://github.com/ElliotHume/LabyrinthianVR) #
-To play the latest development build, you can download the .apk from the releases tab on the GitHub page!
+To play the latest development build, you can download the .apk from the releases tab on the [GitHub page](https://github.com/ElliotHume/LabyrinthianVR)!
 
 
 ## Premise ##
