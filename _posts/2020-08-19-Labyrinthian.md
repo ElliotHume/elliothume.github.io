@@ -25,13 +25,20 @@ The maze will be covered with secrets and lore tablets that will tell the player
 “Knowledge comes at a price of skill, no information is given to the unworthy” 
 
 ## Screenshots ##
+
 ![Starting room of the Labyrinth](../images/FirstZone.PNG)
+
 ![First zone of the Elemental Path](../images/ElementalZone0.PNG)
 
+
 ### WIP zones: ###
+
 ![First zone of the Arcane Path](../images/ArcaneZone0.PNG)
+
 ![First zone of the Mortal Path](../images/MortalZone0.PNG)
+
 ![First zone of the Planar Path](../images/PlanarZone0.PNG)
+
 
 ----
 ****
