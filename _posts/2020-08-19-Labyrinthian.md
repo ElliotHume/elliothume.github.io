@@ -2,11 +2,10 @@
 layout: post
 title: Labyrinthian
 ---
-# Labyrinthian 
-“Knowledge comes at a price of skill, no information is given to the unworthy” 
+### Labyrinthian is a VR puzzle game developed in Unity with XR support. ###
 
 
-# See the GitHub page [HERE](https://github.com/ElliotHume/LabyrinthianVR) #
+# [See it on GitHub](https://github.com/ElliotHume/LabyrinthianVR) #
 To play the latest development build, you can download the .apk from the releases tab on the GitHub page!
 
 
@@ -23,7 +22,7 @@ The player starts off with no knowledge of magic even though all spells are avai
 
 The maze will be covered with secrets and lore tablets that will tell the player about the world and hint at the intricacies of magics. Finding these secrets will almost never give the player direct power, most of the time they will give the player knowledge of how to progress quicker and/or find more secrets. An example of this is a not-so-well-hidden pedestal that lets the player know that they can draw runes with both hands, so when they are holding a spell they can draw another spell to fire off very quickly after the first.
 
-
+“Knowledge comes at a price of skill, no information is given to the unworthy” 
 
 ## Screenshots ##
 ![Starting room of the Labyrinth](../images/FirstZone.PNG)
