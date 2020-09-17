@@ -39,6 +39,6 @@ The maze will be covered with secrets and lore tablets that will tell the player
 
 ![First zone of the Planar Path](../images/PlanarZone0.PNG)
 
-
+## ##
 ----
 ****
