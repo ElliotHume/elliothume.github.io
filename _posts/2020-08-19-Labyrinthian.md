@@ -30,7 +30,7 @@ The maze will be covered with secrets and lore tablets that will tell the player
 
 ![First zone of the Elemental Path](../images/ElementalZone0.PNG)
 
-
+----
 ### WIP zones: ###
 
 ![First zone of the Arcane Path](../images/ArcaneZone0.PNG)
