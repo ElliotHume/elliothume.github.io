@@ -30,19 +30,7 @@ Recently I have also added PvE combat into the game. Solving the puzzles did not
 ### Adding Intrigue ###
 The maze will be covered with secrets and lore tablets that will tell the player about the world and hint at the intricacies and depth of magic. Finding these secrets will almost never give the player direct power that they did not already have, most of the time they will give the player knowledge of how to progress quicker and/or find more secrets. An example of this is a hint that lets players know that if they use arcanopulse to nullify magic, and they are using farseer (a spell that makes you go up really high but you are stuck in place) you will be dropped and can move as you fall. It's completely gamebreaking but that's kinda the point, its a powerful feeling to be able to subvert the level and puzzle design. Additionaly, the spell casting system will be designed to reward mastery. The skill floor is very low, most scribbles that vaguely resemble the rune will complete the spell, but the better the rune is drawn the more effective the spell will be. A perfectly drawn fireball will be  more than 1.5x the size of an average semblance of the rune, and a poorly drawn fireball can be as small as 0.4x the size. Some spells will do more damage with accuracy, some will have enhanced utility, the design possibilities are very open, every spell could have a unique interaction with rune accuracy.
 
-## Screenshots ##
 
-![Starting room of the Labyrinth](../images/FirstZone2.PNG) 
-
-![First zone of the Elemental Path](../images/ElementalZone0.PNG) 
-
-<br /> 
-
-<br /> 
-
-<br /> 
-
-<br /> 
 
 ----
 ****
