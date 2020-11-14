@@ -8,7 +8,7 @@ title: Labyrinthian
 # [See it on GitHub](https://github.com/ElliotHume/LabyrinthianVR) #
 To play the latest development build, you can download the .apk from the releases tab on the [GitHub page](https://github.com/ElliotHume/LabyrinthianVR)!
 You can also [watch a video of the latest development build](https://drive.google.com/file/d/16uk-74uikTGIiiO71wLbk3n_y62xsisW/view?usp=sharing).
-**The GitHub page is often the most up-to-date source of content for this project.**
+**The GitHub page is usually the most up-to-date source of content for this project.**
 
 ## Premise ##
 A mage apprentice is sent to the labyrinth by a wrongly cast portal spell. The labyrinth is a place from myth where godlings go to find their powers and become full blooded gods. When godlings come they are given a guiding light and a runic tablet, but as a human your guiding light has not been summoned. You are to find a way through the labyrinth alone with the promise of powerful knowledge and a hope to return home.
