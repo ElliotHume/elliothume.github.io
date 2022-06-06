@@ -13,9 +13,6 @@ You can also [watch a video of the latest development build](https://drive.googl
 ## Premise ##
 A mage apprentice is sent to the labyrinth by a wrongly cast portal spell. The labyrinth is a place from myth where godlings go to find their powers and become full blooded gods. When godlings come they are given a guiding light and a runic tablet, but as a human your guiding light has not been summoned. You are to find a way through the labyrinth alone with the promise of powerful knowledge and a hope to return home.
 
-## Setting ##
-A limitless maze filled with tricks from every realm. In the first room a timeless dusk fills the atmosphere with a creeping sense of tension and loneliness. Puzzles, ancient secrets, and tablets filled with lore are found all around. There is no singular obvious path for you to choose, but instead there are branching paths allowing the player to choose how they will start their journey.
-
 ## Gameplay and Design ##
 ### Beginnings ###
 The player is dropped into the labyrinth with no tutorial and limited explanation of anything but the core mechanics. The only information available at the start is a tablet that explains the premise of the labyrinth and another that explains how to cast spells. In every room there are branching paths that give the player an illusion of choice, but will all need to be traversed/completed eventually to progress. Information that helps the player understand the game will be "hidden" around each starting area. This gives the player a predictable trick that can be found moderately easily (ex. a button on the back of a zone introduction pedestal) to give them a sense of accomplishment and reward them with information. The player (ideally) starts off with no knowledge of the magic system and is only given the rune for the most basic spell "Fireball" at the start, but all spells are unlocked from the start. Also, the game currently works almost exclusively using the grip button and joystick.
@@ -32,6 +29,10 @@ Recently I have also added PvE combat into the game. Solving the puzzles did not
 The maze will be covered with secrets and lore tablets that will tell the player about the world and hint at the intricacies and depth of magic. Finding these secrets will almost never give the player direct power that they did not already have, most of the time they will give the player knowledge of how to progress quicker and/or find more secrets. An example of this is a hint that lets players know that if they use arcanopulse to nullify magic, and they are using farseer (a spell that makes you go up really high but you are stuck in place) you will be dropped and can move as you fall. It's completely gamebreaking but that's kinda the point, its a powerful feeling to be able to subvert the level and puzzle design. Additionaly, the spell casting system will be designed to reward mastery. The skill floor is very low, most scribbles that vaguely resemble the rune will complete the spell, but the better the rune is drawn the more effective the spell will be. A perfectly drawn fireball will be  more than 1.5x the size of an average semblance of the rune, and a poorly drawn fireball can be as small as 0.4x the size. Some spells will do more damage with accuracy, some will have enhanced utility, the design possibilities are very open, every spell could have a unique interaction with rune accuracy.
 
 
-
+## Screenshots ##
+![Redesigned starting room of the Labyrinth](/images/Zone0.PNG)
+![First zone of the Elemental Path](/images/ElementalZone0.PNG)
+![First zone of the Arcane Path](/images/ArcaneZone0N.PNG)
+![Battlegrounds](/images/BattlegroundsV2.PNG)
 ----
 ****
