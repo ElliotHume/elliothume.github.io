@@ -30,9 +30,20 @@ The maze will be covered with secrets and lore tablets that will tell the player
 
 
 ## Screenshots ##
-![Redesigned starting room of the Labyrinth](/images/Zone0.PNG)
-![First zone of the Elemental Path](/images/ElementalZone0.PNG)
-![First zone of the Arcane Path](/images/ArcaneZone0N.PNG)
-![Battlegrounds](/images/BattlegroundsV2.PNG)
+
+<span style="display:flex;">
+<img src="/images/Zone0.PNG" alt="drawing" style="width:980px;height:598px"/>
+</span>
+<span style="display:flex;">
+<img src="/images/ElementalZone0.PNG" alt="drawing" style="width:980px;height:598px"/>
+</span>
+<span style="display:flex;">
+<img src="/images/ArcaneZone0N.PNG" alt="drawing" style="width:980px;height:598px"/>
+</span>
+<span style="display:flex;">
+<img src="/images/BattlegroundsV2.PNG" alt="drawing" style="width:980px;height:598px"/>
+</span>
+
+
 ----
 ****
